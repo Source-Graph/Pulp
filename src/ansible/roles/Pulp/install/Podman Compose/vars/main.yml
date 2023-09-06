@@ -1,0 +1,5 @@
+git_url: "git@github.com:pulp/pulp-oci-images.git"
+
+git_name: "{{ git_url | regex_replace('.git', '') | basename }}"
+
+git_dir: "{{ base_dir }}/{{ git_name }}"

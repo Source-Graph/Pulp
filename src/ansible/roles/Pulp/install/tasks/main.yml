@@ -1,4 +1,0 @@
-- name: Create directory for pulp podman-compose
-  ansible.builtin.file:
-    path: "{{ git_dir }}"
-    state: directory
