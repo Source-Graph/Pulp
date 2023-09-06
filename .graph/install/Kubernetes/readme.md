@@ -1,0 +1,1 @@
+https://pulpproject.org/installation-introduction/#is-there-a-kubernetesopenshift-deployment-option
