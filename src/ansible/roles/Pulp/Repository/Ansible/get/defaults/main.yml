@@ -1,3 +1,1 @@
 repo_name: myrepo
-
-create_repo: "pulp ansible repository create --name {{ repo_name }}"

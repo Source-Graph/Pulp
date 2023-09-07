@@ -1,0 +1,1 @@
+create_distribution: "pulp ansible distribution create --name {{ distribution_name }} --base-path {{ base_path }} --repository {{ repo_name }}"

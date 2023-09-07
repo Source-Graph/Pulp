@@ -6,7 +6,7 @@
 - name: Create Ansible repository
   ansible.builtin.shell: "{{ create_repo }}"
   args:
-    creates: "{{ etc_file }}"
+    creates: "{{ repo_etc_file }}"
   notify:
   - add repo to etc
   - mkdir /etc/pulp/repo_type
