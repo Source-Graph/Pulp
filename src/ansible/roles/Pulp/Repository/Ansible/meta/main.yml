@@ -1,2 +1,3 @@
 dependencies:
-- Pulp/get
+- Pulp/Repository/Ansible/create
+- Pulp/Repository/Ansible/requirements file

@@ -3,5 +3,6 @@
     ansible_become_password: u
 
   roles:
-  - Pulp
+  - Pulp/install
   - Pulp/CLI
+  - Pulp/Repository/Ansible

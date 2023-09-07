@@ -1,0 +1,7 @@
+repo_type: ansible
+
+repo_dir: "{{ etc_dir }}/{{ repo_type }}"
+
+etc_dir: "{{ repo_dir }}/etc"
+
+etc_file: "{{ etc_dir }}/{{ repo_name }}.repo"
