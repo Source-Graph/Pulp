@@ -1,0 +1,43 @@
+# From: https://pulpproject.org/pulp-in-one-container/
+
+- name: mkdir
+  ansible.builtin.file:
+    path: "{{ root_dir }}/{{ item }}"
+    state: directory
+  loop:
+  - settings
+  - pulp_storage
+  - pgsql
+  - containers
+
+- name: Template settings/settings.py
+  ansible.builtin.template:
+    src: settings.py.j2
+    dest: "{{ root_dir }}/settings/settings.py"
+
+- name: get SELinux mode
+  command: getenforce
+  register: selinux_status
+  changed_when: false
+
+
+- name: With SELinux
+  containers.podman.podman_container:
+    name: pulp
+    image: pulp/pulp
+    state: started
+    publish:
+      - "8080:80"
+    volume:
+      - "{{ root_dir }}/settings:/etc/pulp:Z"
+      - "{{ root_dir }}/pulp_storage:/var/lib/pulp:Z"
+      - "{{ root_dir }}/pgsql:/var/lib/pgsql:Z"
+      - "{{ root_dir }}/containers:/var/lib/containers:Z"
+    device:
+    - "/dev/fuse"
+  when: selinux_status.stdout == 'Enforcing'
+
+- name: Without SELinux
+  debug:
+    msg: "Running without SELinux"
+  when: not selinux_status.stdout == 'Enforcing'
