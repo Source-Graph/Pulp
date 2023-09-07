@@ -1,0 +1,10 @@
+- name: mkdir /etc/pulp/repo_type
+  ansible.builtin.file:
+    path: "{{ etc_dir }}/{{ repo_type }}"
+    state: directory
+
+- name: add repo to etc
+  ansible.builtin.file:
+    path: "{{ etc_file }}"
+    state: touch
+  become: true
