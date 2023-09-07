@@ -1,1 +1,3 @@
 sync_remote: "pulp ansible repository sync --name {{ repo_name }} --remote basic"
+
+test_page: "http://{{ hostname }}:8080/pulp_ansible/galaxy/{{ base_path }}/api/v3/plugin/ansible/content/{{ base_path }}/collections/"

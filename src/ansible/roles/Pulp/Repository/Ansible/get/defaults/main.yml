@@ -1,3 +1,7 @@
 repo_name: myrepo
 
+distribution_name: mydistro
+
+base_path: foo
+
 _test: false

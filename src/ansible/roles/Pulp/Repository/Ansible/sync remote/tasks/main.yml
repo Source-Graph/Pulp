@@ -13,3 +13,6 @@
   when: async
 
 # TODO: Finish async
+
+- name: View
+  ansible.builtin.shell: "xdg-open {{ test_page }}"
