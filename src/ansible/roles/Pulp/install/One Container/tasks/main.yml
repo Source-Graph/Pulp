@@ -24,7 +24,7 @@
 - name: With SELinux
   containers.podman.podman_container:
     name: pulp
-    image: pulp/pulp
+    image: "{{ image }}"
     state: started
     publish:
       - "8080:80"
