@@ -9,6 +9,7 @@ index: https://pulpproject.org/media/
 
 # CLI
 - [Community Central: Using Pulp 3 - Simpler and Faster](https://youtu.be/yXrS652k70c)
+>In this episode, Brian Bouterse will highlight the Pulp 3 feature set through the brand-new Pulp 3 CLI.
 
 # in Continuous Integration
 - [Using Containers and VMs on Free Public CIs](https://youtu.be/7PMZP8RTYJ8)
