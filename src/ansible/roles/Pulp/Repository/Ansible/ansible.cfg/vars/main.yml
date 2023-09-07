@@ -1,0 +1,3 @@
+server_line: "server: http://{{ hostname }}:8080/pulp_ansible/galaxy/{{ base_path}}/"
+
+ansible_cfg: "{{ ansible_dir }}ansible.cfg"

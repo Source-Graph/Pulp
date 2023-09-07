@@ -1,0 +1,12 @@
+- name: Add Galaxy section
+  ansible.builtin.lineinfile:
+    path: "{{ ansible_cfg }}"
+    regexp: '^[galaxy]'
+    line: "[galaxy]"
+
+- name: Add Galaxy source
+  ansible.builtin.lineinfile:
+    path: "{{ ansible_cfg }}"
+    regexp: '^server: http:'
+    insertafter: '^[galaxy]'
+    line: "{{ server_line }}"
