@@ -1,0 +1,11 @@
+# from: demo https://youtu.be/yXrS652k70c
+
+- name: Copy example requirements_file
+  ansible.builtin.file:
+    src: example.yml
+    dest: "{{ requirements_file }}"
+
+- name: Create remote from Ansible requirements_file
+  ansible.builtin.shell: "{{ create_remote }}"
+  args:
+    creates: "TODO {{ etc_dir }}"

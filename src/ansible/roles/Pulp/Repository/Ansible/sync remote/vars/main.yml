@@ -1,0 +1,1 @@
+sync_remote: "pulp ansible repository sync --name {{ repo_name }} --remote basic"

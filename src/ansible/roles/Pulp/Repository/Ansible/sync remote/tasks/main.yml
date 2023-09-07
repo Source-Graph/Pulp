@@ -1,0 +1,15 @@
+- name: Include vars from example
+  ansible.builtin.include_vars:
+    dir: "{{ playbook_dir }}/Repository/Ansible/remote/from requirements/vars"
+  when: _test
+
+- name: Sync remote from Ansible Galaxy
+  ansible.builtin.shell: "{{ sync_remote }}"
+  args:
+    creates: "TODO {{ sync }}"
+  async: 3600
+  poll: 60
+  register: syncing
+  when: async
+
+# TODO: Finish async

@@ -1,0 +1,5 @@
+file_name: basic.yml
+
+requirements_file: "{{ repo_dir }}/{{ file_name }}"
+
+create_remote: "pulp ansible remote -t collection create --name basic --url https://galaxy.ansible.com --requirements-file {{ requirements_file }}"  # demo: https://youtu.be/yXrS652k70c?t=2001
