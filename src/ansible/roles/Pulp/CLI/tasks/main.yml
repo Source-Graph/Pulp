@@ -1,0 +1,3 @@
+- name: Install Pulp CLI
+  ansible.builtin.pip:
+    name: pulp-cli[pygments]

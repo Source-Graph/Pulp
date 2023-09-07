@@ -4,3 +4,4 @@
 
   roles:
   - Pulp
+  - Pulp/CLI
