@@ -1,3 +1,8 @@
+- name: make repo dir
+  ansible.builtin.file:
+    path: "{{ repo_dir }}"
+    state: directory
+
 - name: Create Ansible repository
   ansible.builtin.shell: "{{ create_repo }}"
   args:
