@@ -1,4 +1,0 @@
-- name: Create Ansible repository
-  ansible.builtin.shell: "{{ create_requirements_file }}"
-  args:
-    creates: "{{ etc_file }}"

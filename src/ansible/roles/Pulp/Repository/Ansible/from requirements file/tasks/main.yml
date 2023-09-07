@@ -1,0 +1,9 @@
+- name: Create example requirements.yml
+  ansible.builtin.file:
+    src: example.yml
+    dest: "{{ repo_dir }}/requirements.yml"
+
+- name: Create remote from Ansible requirements.yml
+  ansible.builtin.shell: "{{ from_requirements_file }}"
+  args:
+    creates: "TODO {{ etc_dir }}"

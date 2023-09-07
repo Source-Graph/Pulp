@@ -1,0 +1,6 @@
+---
+# From: https://youtu.be/yXrS652k70c?t=2001
+collections:
+# With just the collection name
+- pulp.pulp_installer
+- ansible.posix
