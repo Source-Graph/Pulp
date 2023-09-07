@@ -1,2 +1,5 @@
 - ansible.builtin.include_role:
     name: "Pulp/install/{{ install_type }}"
+
+- ansible.builtin.include_role:
+    name: "Pulp/CLI/install"

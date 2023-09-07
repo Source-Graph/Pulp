@@ -1,0 +1,3 @@
+dependencies:
+  - Pulp/CLI/install
+  - Pulp/CLI/connection

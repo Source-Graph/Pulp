@@ -1,0 +1,3 @@
+connect_cmd: "pulp config create --username admin --base-url http://{{ hostname }}:8080 --password {{ admin_password }}"
+
+cli_config_file: "~/.config/pulp/cli.toml"  # found with: `pulp config validate`

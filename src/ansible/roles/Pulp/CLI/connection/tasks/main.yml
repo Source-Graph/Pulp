@@ -1,0 +1,4 @@
+- name: Create pulp CLI connection
+  ansible.builtin.shell: "{{ connect_cmd }}"
+  args:
+    creates: "{{ cli_config_file }}"

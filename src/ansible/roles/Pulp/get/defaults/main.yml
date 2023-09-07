@@ -2,3 +2,5 @@ base_dir: "~/.uni/repo/pulp"
 
 install_type: "One Container"
 # Podman Compose
+
+admin_password: pulp
