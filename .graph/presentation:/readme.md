@@ -6,3 +6,6 @@ index: https://pulpproject.org/media/
 # AnsibleGalaxy.Host
 - [Host your own on premise Ansible Galaxy - DevConf.CZ 2021](https://youtu.be/GjrWYMfjGrs)
 - [FOSDEM 2021 - Host your own on-premise Ansible Galaxy](https://archive.fosdem.org/2021/schedule/event/hostyourownansiblegalaxy/), [#fragment](https://pulpproject.org/media/#host-your-own-ansible-galaxy), [mirror|](https://ftp.heanet.ie/mirrors/fosdem-video/2021/D.infra/hostyourownansiblegalaxy.mp4)
+
+# in Continuous Integration
+- [Using Containers and VMs on Free Public CIs](https://youtu.be/7PMZP8RTYJ8)
