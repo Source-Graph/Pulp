@@ -1,4 +1,4 @@
-# doc: https://docs.ansible.com/ansible/latest/reference_appendices/config.html#galaxy-server
+# doc: https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html#galaxy-server-config, https://docs.ansible.com/ansible/latest/reference_appendices/config.html#galaxy-server
 - name: Add Galaxy section
   ansible.builtin.lineinfile:
     path: "{{ ansible_cfg }}"
